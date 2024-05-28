@@ -54,6 +54,12 @@ function gradeQuiz(candidateAnswers) {
   grade = (noOfCorrectAnswers/5)*100;
   console.log("You have scored ", grade,"%");
 
+  if(grade >= 80){
+    console.log("Congradulations! You have passed!!");
+  }else{
+    console.log("Oops! You Failed! Try again!");
+  }
+
   return grade;
 }
 
